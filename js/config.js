@@ -11,7 +11,7 @@ window.NG = {
   address: "মিরপুর-১২, ঢাকা, বাংলাদেশ",
 
   /* হোমপেজের উপরে ছোট নোটিশ বার (ফাঁকা রাখলে দেখাবে না) — সরাসরি এখানে লিখে GitHub-এ কমিট করলেই বদলে যাবে */
-  announcement: "",
+  announcement: "🔥11.11 Offer🔥",
 
   /* ---------- ২. যোগাযোগ ---------- */
   whatsapp: "01577-789212",
@@ -37,8 +37,8 @@ window.NG = {
      প্রতিটির qr ঐচ্ছিক (resources/images/ এ ছবি রেখে পথ দিন)। note এ নির্দেশনা লিখুন।
      ⚠️ অ্যাডমিন প্যানেলের "সেটিংস" থেকেও এই তথ্য বদলানো যায় (এখানে বদলালে ওটাই প্রথমবার দেখাবে)। */
   paymentMethods: [
-    { id: "bkash", label: "bKash", type: "নম্বরে Send Money", number: "01577-789212", note: "Personal নম্বরে Send Money করুন, তারপর যে Transaction ID (TrxID) পাবেন সেটা নিচে বসান।" },
-    { id: "nagad", label: "Nagad", type: "নম্বরে Send Money", number: "01577-789212", note: "Personal নম্বরে Send Money করুন, TrxID বসান।" },
+    { id: "bkash", label: "bKash", type: "নম্বরে Send Money", number: "01732337679", note: "Personal নম্বরে Send Money করুন, তারপর যে Transaction ID (TrxID) পাবেন সেটা নিচে বসান।" },
+    { id: "nagad", label: "Nagad", type: "নম্বরে Send Money", number: "01732337679", note: "Personal নম্বরে Send Money করুন, TrxID বসান।" },
     { id: "bank", label: "Bank Transfer (BRAC Bank)", type: "ব্যাংক অ্যাকাউন্ট", number: "আপনার BRAC Bank A/C নম্বর বসান", note: "A/C Name: Nurography (নিজের নাম দিন) • ট্রান্সফারের পর রেফারেন্স/স্লিপ নম্বর বসান।" },
     { id: "binance", label: "Binance Pay (USDT)", type: "Binance ID", number: "আপনার Binance Pay ID বসান", note: "Binance অ্যাপ থেকে Pay > Binance ID দিয়ে পাঠান, Transaction ID বসান।" },
     { id: "redotpay", label: "RedotPay Card (USDT/USD)", type: "ওয়ালেট অ্যাড্রেস", number: "আপনার RedotPay/USDT (TRC20) অ্যাড্রেস বসান", note: "শুধু USDT (TRC20) পাঠান, ভুল নেটওয়ার্কে পাঠালে টাকা ফেরত পাওয়া যায় না। পাঠানোর পর Transaction Hash বসান." }
