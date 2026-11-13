@@ -52,6 +52,26 @@
 <script src="js/demo/demo.js"></script>
 <script src="js/api.js"></script>
 <script src="js/shop.js"></script>
+<script>
+  // চেকআউট সফল হওয়ার পর কাস্টম অভিনন্দন ও নির্দেশনামূলক মেসেজ দেখানোর জন্য ওভাররাইড হ্যান্ডলার
+  document.addEventListener('DOMContentLoaded', function () {
+    var form = document.getElementById('checkoutForm');
+    if (!form) return;
+    form.addEventListener('submit', function (e) {
+      setTimeout(function () {
+        var wrap = document.getElementById('ckWrap');
+        if (wrap && document.querySelector('.success, .oid, [class*="success"]')) {
+          wrap.innerHTML = '<div class="form-card rv center" style="max-width:700px;margin:auto;padding:40px 20px;">' +
+            '<div style="font-size:50px;margin-bottom:15px;">🎉</div>' +
+            '<h2 style="color:var(--teal);margin-bottom:15px;font-size:24px;">অভিনন্দন! আপনার অর্ডার সফলভাবে সম্পন্ন হয়েছে।</h2>' +
+            '<p style="color:var(--text);font-size:16px;line-height:1.8;margin-bottom:20px;">অর্ডারটি অ্যাডমিন কর্তৃক <b>Approve</b> হলে দয়া করে আপনার জিমেইলের <b>Inbox</b> অথবা <b>Spam Box</b> চেক করুন। আপনার কাঙ্ক্ষিত প্রোডাক্ট বা কোর্সের অ্যাক্সেস লিংক সরাসরি সেখানে পাঠিয়ে দেওয়া হবে।</p>' +
+            '<a href="index.html" class="btn btn-primary" style="display:inline-flex;margin-top:10px;">হোম পেজে ফিরে যান</a>' +
+            '</div>';
+        }
+      }, 1500);
+    });
+  });
+</script>
 <script src="js/main.js"></script>
 <script src="js/guard.js"></script>
 </body>
